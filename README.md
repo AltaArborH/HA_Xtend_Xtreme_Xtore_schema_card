@@ -23,7 +23,6 @@ Copy the code from the xtend_xtreme_schema_card.yaml into an empty card.
 - <a href="https://github.com/thomasloven/lovelace-card-mod">Card Mod (HACS)</a> for animation and styling
 - <a href="https://github.com/piitaya/lovelace-mushroom">Mushroom Title Card (HACS)</a> for some headers
 
-
 In addition to the Xtend and Xtreme template sensors (from DSchouten HA_connection_Xtend) I added some extra calculated sensors I use in this card:
 
 ### Xtend
@@ -64,6 +63,8 @@ In addition to the Xtend and Xtreme template sensors (from DSchouten HA_connecti
           mdi:fire-off
         {% endif %}
 ```
+
+I hope I covered all dependencies. Made this repository after everything was running smooth.
 
 #### My dahsboard for reference
 
