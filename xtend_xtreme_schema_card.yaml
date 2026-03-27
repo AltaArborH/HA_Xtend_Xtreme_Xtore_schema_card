@@ -1,0 +1,385 @@
+type: picture-elements
+image:
+  media_content_id: >
+    data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800
+    800'>
+      <defs>
+        <style>
+          .sub-label {
+            fill: gray;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 20px;
+          }
+        </style>
+        <pattern id='diag' patternUnits='userSpaceOnUse' width='10' height='10' patternTransform='rotate(-45)'>
+          <line x1='0' y1='0' x2='0' y2='10' stroke='gray' stroke-width='15' opacity='0.1' />
+        </pattern>
+      </defs>
+      <rect x='10' y='720' width='780' height='40' fill='url(%23diag)' opacity='1' />
+      <rect x='580' y='15' width='40' height='705' fill='url(%23diag)' opacity='1' />
+      <rect x='50' y='40' width='200' height='350' rx='20' fill='gray' opacity='0.1'/>
+      <rect x='270' y='40' width='200' height='350' rx='20' fill='gray' opacity='0.1'/>
+      <rect x='380' y='450' width='40' height='80' rx='20' fill='gray' opacity='0.1'/>
+      <rect x='480' y='400' width='90' height='100' rx='20' fill='gray' opacity='0.1'/>
+      <rect x='100' y='720' width='340' height='30' rx='20' fill='gray' opacity='0.1'/>
+      <rect x='630' y='400' width='160' height='310' rx='20' fill='gray' opacity='0.1'/>
+      <text x='18%' y='92.6%' class='sub-label'>~ Heat distribution system ~</text>
+    </svg>
+elements:
+  - type: image
+    image: >
+      data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+      800 800'>
+        <path d='M190 390 v85 h190' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M380 505 h-260 v-115' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M155 390 v85 h-91 v30' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M400 390 v60' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M400 530 v190' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M330 720 v-330' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M470 190 h250 v210' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M470 215 h225 v185' fill='none' stroke='gray' stroke-width='3' opacity='0.2' />
+      </svg>
+    style:
+      top: 50%
+      left: 50%
+      width: 100%
+      pointer-events: none
+  - type: image
+    image: >
+      data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+      800 800'>
+        <style>
+          @keyframes flow_dhw {from{stroke-dashoffset:20}to{stroke-dashoffset:0}}
+          .dhw { animation: flow_dhw 0.6s linear infinite; }
+        </style>
+        <path d='M155 390 v85 h-91 v30' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='dhw' />
+      </svg>
+    style:
+      top: 50%
+      left: 50%
+      width: 100%
+      pointer-events: none
+    card_mod:
+      style: |
+        :host {
+          display: {{ 'block' if states('sensor.xtreme_boiler_ot_dhw_flowrate')|float(0) > 0 else 'none' }};
+        }
+  - type: image
+    image: >
+      data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+      800 800'>
+        <style>
+          @keyframes stroke {from{stroke-dashoffset:0}to{stroke-dashoffset:20}} 
+          .f { animation: stroke 1s linear infinite; }
+        </style>
+        <path d='M190 390 v85 h190' stroke='%233498db' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M380 505 h-260 v-115' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' /> 
+      </svg>
+    style:
+      top: 50%
+      left: 50%
+      width: 100%
+      pointer-events: none
+    card_mod:
+      style: |
+        :host {
+          display: {{ 'block' if states('sensor.xtend_fsystem')|float(0) > 0 else 'none' }};
+          filter: {{ 'none' if is_state('binary_sensor.xtreme_actief_check', 'on') else 'grayscale(100%) opacity(0.5)' }};
+        }
+  - type: image
+    image: >
+      data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+      800 800'>
+        <style>@keyframes stroke {from{stroke-dashoffset:20}to{stroke-dashoffset:0}} .f{animation: stroke 1s linear infinite;}</style>
+        <path d='M400 390 v60' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M400 530 v190' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M330 720 v-330' stroke='%233498DB' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+      </svg>
+    style:
+      top: 50%
+      left: 50%
+      width: 100%
+      pointer-events: none
+    card_mod:
+      style: |
+        :host {
+          display: {{ 'block' if states('sensor.xtend_fsystem')|float(0) > 0 else 'none' }};
+          filter: {{ 'none' if is_state('binary_sensor.xtend_actief_check', 'on') else 'grayscale(100%) opacity(0.5)' }};
+        }
+  - type: image
+    image: >
+      data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
+      800 800'>
+        <style>
+          @keyframes heen {from{stroke-dashoffset:20}to{stroke-dashoffset:0}} 
+          @keyframes terug {from{stroke-dashoffset:0}to{stroke-dashoffset:20}} 
+          .fh{animation: heen 1s linear infinite;} 
+          .ft{animation: terug 1s linear infinite;}
+        </style>
+        <path d='M470 190 h250 v210' stroke='%233498DB' stroke-width='6' fill='none' stroke-dasharray='4,6' class='fh' />
+        <path d='M470 215 h225 v185' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='ft' />
+      </svg>
+    style:
+      top: 50%
+      left: 50%
+      width: 100%
+      pointer-events: none
+    card_mod:
+      style: |
+        :host { 
+          display: {{ 'block' if states('sensor.xtend_actualfan1speed')|float(0) > 0 else 'none' }}; 
+        }
+  - type: custom:mushroom-title-card
+    title: Home
+    style:
+      top: 78%
+      left: 8%
+    card_mod:
+      style: |
+        ha-card { --title-font-size: 1rem !important; }
+  - type: state-label
+    entity: sensor.xtend_roomtemperature_1
+    style:
+      top: 86%
+      left: 8%
+      font-size: 0.9rem
+  - type: custom:mushroom-title-card
+    title: Xtreme
+    style:
+      top: 8%
+      left: 19%
+    card_mod:
+      style: |
+        ha-card { 
+          --title-font-size: 1rem !important; 
+          --title-font-weight: bold !important; 
+        }
+  - type: state-label
+    entity: sensor.xtreme_tboilersupply
+    style:
+      top: 16%
+      left: 19%
+      font-weight: bold
+      font-size: 1rem
+    card_mod:
+      style: |
+        :host {
+          color: {{ '#FF8C00' if is_state('binary_sensor.xtreme_actief_check', 'on') else 'gray' }};
+        }
+  - type: state-label
+    entity: sensor.xtreme_deltat
+    prefix: "ΔT: "
+    style:
+      top: 25%
+      left: 19%
+      color: var(--secondary-text-color)
+  - type: state-label
+    entity: sensor.xtreme_tboilerreturn
+    style:
+      top: 34%
+      left: 19%
+      font-weight: bold
+      font-size: 1rem
+    card_mod:
+      style: |
+        :host {
+          color: {{ '#3498db' if is_state('binary_sensor.xtreme_actief_check', 'on') else 'gray' }};
+        }
+  - type: state-icon
+    entity: binary_sensor.xtreme_actief_check
+    style:
+      top: 42%
+      left: 19%
+    card_mod:
+      style: |
+        :host { 
+          position: absolute; 
+          transform: translate(-50%, -50%); 
+          animation: {{ 'pulse_color 2s ease-in-out infinite' if is_state('binary_sensor.xtreme_actief_check', 'on') else 'none' }}; 
+        }
+        @keyframes pulse_color { 
+          0%, 100% { transform: translate(-50%, -50%) scale(1); } 
+          50% { transform: translate(-50%, -50%) scale(1.5); } 
+        }
+  - type: custom:mushroom-title-card
+    title: Xtend
+    style:
+      top: 8%
+      left: 46%
+    card_mod:
+      style: |
+        ha-card { 
+          --title-font-size: 1rem !important; 
+          --title-font-weight: bold !important; 
+        }
+  - type: state-label
+    entity: sensor.xtend_thpsupply
+    style:
+      top: 16%
+      left: 46%
+      font-weight: bold
+      font-size: 1rem
+    card_mod:
+      style: |
+        :host {
+          color: {{ '#FF8C00' if is_state('binary_sensor.boiler_burner', 'on') else 'gray' }};
+        }
+  - type: state-label
+    entity: sensor.xtend_deltat
+    prefix: "ΔT: "
+    style:
+      top: 25%
+      left: 46%
+      color: var(--secondary-text-color)
+  - type: state-label
+    entity: sensor.xtend_thpreturn
+    style:
+      top: 34%
+      left: 46%
+      font-weight: bold
+      font-size: 1rem
+    card_mod:
+      style: |
+        :host {
+          color: {{ '#3498db' if is_state('binary_sensor.boiler_burner', 'on') else 'gray' }};
+        }
+  - type: state-icon
+    entity: binary_sensor.xtend_actief_check
+    style:
+      top: 42%
+      left: 46%
+    card_mod:
+      style: |
+        :host { 
+          animation: {{ 'pulse_color 2s infinite' if is_state('binary_sensor.xtend_actief_check', 'on') else 'none' }}; 
+        }
+        @keyframes pulse_color { 
+          0%, 100% { transform: translate(-50%,-50%) scale(1); } 
+          50% { transform: translate(-50%,-50%) scale(1.4); } 
+        }
+  - type: state-label
+    entity: sensor.xtend_fsystem
+    style:
+      top: 86%
+      left: 28%
+      color: var(--secondary-text-color)
+      font-size: 0.8rem
+    prefix: "F: "
+  - type: state-label
+    entity: sensor.xtend_requestedtemperature
+    prefix: "T: "
+    style:
+      top: 86%
+      left: 61%
+      color: var(--secondary-text-color)
+      font-size: 0.8rem
+  - type: state-icon
+    entity: sensor.xtreme_boiler_ot_dhw_flowrate
+    icon: mdi:shower-head
+    style:
+      top: 65%
+      left: 8%
+    card_mod:
+      style: |
+        state-badge {
+          color: {{ '#f1c40f' if states('sensor.xtreme_boiler_ot_dhw_flowrate')|float(0) > 0 }} !important;
+        }
+  - type: state-label
+    entity: sensor.xtend_roomtemperature_set_1
+    style:
+      top: 54.5%
+      left: 66%
+      font-size: 0.8rem
+  - type: custom:mushroom-title-card
+    title: " --   +"
+    style:
+      top: 57%
+      left: 66%
+    card_mod:
+      style: |
+        ha-card { 
+          --title-font-size: 0.8rem !important; 
+          color: gray !important; 
+        }
+  - type: custom:mushroom-title-card
+    title: Outdoor
+    style:
+      top: 3%
+      left: 89%
+    card_mod:
+      style: |
+        ha-card { --title-font-size: 1rem !important; }
+  - type: state-label
+    entity: sensor.xtend_toutdoor
+    style:
+      top: 11%
+      left: 89%
+      font-size: 0.9rem
+  - type: custom:mushroom-title-card
+    title: ODU
+    style:
+      top: 53%
+      left: 89%
+    card_mod:
+      style: |
+        ha-card { 
+          --title-font-size: 1rem !important; 
+          --title-font-weight: bold !important; 
+        }
+  - type: state-label
+    entity: sensor.xtend_temperaturecondensor_refrigrerant_gas
+    style:
+      top: 61%
+      left: 89%
+      font-weight: bold
+      font-size: 1rem
+    card_mod:
+      style: |
+        :host {
+          color: {{ '#FF8C00' if states('sensor.xtend_actualfan1speed')|float(0) > 0 else 'gray' }};
+        }
+  - type: state-label
+    entity: sensor.xtend_temperaturecondensor_refrigrerant_liquid
+    style:
+      top: 70%
+      left: 89%
+      font-weight: bold
+      font-size: 1rem
+    card_mod:
+      style: |
+        :host {
+          color: {{ '#3498db' if states('sensor.xtend_actualfan1speed')|float(0) > 0 else 'gray' }};
+        }
+  - type: state-icon
+    entity: sensor.xtend_fsystem
+    icon: mdi:fan
+    style:
+      top: 78%
+      left: 89%
+    card_mod:
+      style: |
+        :host { 
+          position: absolute; 
+          transform: translate(-50%, -50%); 
+        }
+        state-badge { 
+          animation: {{ 'rotation ' + (500 / ([states('sensor.xtend_actualfan1speed')|float(0), 0.1]|max))|string + 's linear infinite' if states('sensor.xtend_actualfan1speed')|float(0) > 0 else 'none' }}; 
+          color: {{ '#f1c40f' if states('sensor.xtend_actualfan1speed')|float(0) > 0 }} !important;
+        }
+        @keyframes rotation { 
+          from { transform: rotate(0deg); } 
+          to { transform: rotate(360deg); } 
+        }
+  - type: state-label
+    entity: sensor.xtend_actualfan1speed
+    style:
+      top: 86%
+      left: 89%
+      color: var(--secondary-text-color)
+      font-size: 0.8rem
+card_mod:
+  style: |
+    ha-card {
+      background-color: var(--card-background-color) !important;
+      border-radius: 12px;
+    }
