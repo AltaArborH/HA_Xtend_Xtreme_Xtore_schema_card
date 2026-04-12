@@ -11,7 +11,7 @@ To retrieve the correct data used in this card, see my other GitHub page [AltaAr
 
 ## Installation
 
-Copy the code from the xtend_xtreme_schema_card.yaml into an empty card.
+Copy the code from the xtend_xtreme_xtore_schema_card.yaml into an empty card.
 
 ### Dependencies
 - <a href="https://github.com/DSchoutsen/HA_connection_Xtend">HA_connection_Xtend</a> for the connection to and sensors from Xtend and Xtreme
