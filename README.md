@@ -1,18 +1,13 @@
 # HA_Xtend_Xtreme_schema_card
 
-NOTE: this works for me, so I posible will not be updating this, but you can always fork this for your own setup.
+This Fork is based on the [HA_Xtend_Xtreme_schema_card](https://github.com/webpatrick/HA_Xtend_Xtreme_schema_card). 
 
-I made myself a Home Assistant card based on the schema below and on the REST connection described in https://github.com/DSchoutsen/HA_connection_Xtend and I would like to share this with every other user of the integration and own an Intergas Xtend and Xtreme.
+With this card, the information from the Xtore is also added to the schema-card made by [WebPatrick](https://github.com/webpatrick).  
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/e9b59994-9793-4d80-b700-e1c60cc90c96" />
 
-The card is an <a href="https://www.home-assistant.io/dashboards/picture-elements/">picture-elements</a> card an I made it dark-light thema proof.
+<img width="600" alt="image" src="https://github.com/AltaArborH/HA_Xtend_Xtreme_Xtore_schema_card/blob/main/Schema-card_Xtend_Xtreme_Xtore_v0.1.png" />
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/fe342971-5dcc-4d94-8af6-02391534e7d1" /> <img width="300" alt="image" src="https://github.com/user-attachments/assets/65d592a5-cb51-40be-8bc3-16a5003da638" />
-
-It also has color and animation for state and flow.
-
-<img width="450" alt="image" src="animation.gif" />
+To retrieve the correct data used in this card, see my other GitHub page [HA_Xtend-Xtreme-Xtore](https://github.com/AltaArborH/HA_Xtend-Xtreme-Xtore).
 
 ## Installation
 
@@ -23,7 +18,7 @@ Copy the code from the xtend_xtreme_schema_card.yaml into an empty card.
 - <a href="https://github.com/thomasloven/lovelace-card-mod">Card Mod (HACS)</a> for animation and styling
 - <a href="https://github.com/piitaya/lovelace-mushroom">Mushroom Title Card (HACS)</a> for some headers
 
-In addition to the Xtend and Xtreme template sensors (from DSchouten HA_connection_Xtend) I added some extra calculated sensors I use in this card:
+In addition to the Xtend and Xtreme template sensors (from DSchouten HA_connection_Xtend) some extra calculated sensors are added to use in this card:
 
 ### Xtend
 ```yaml
@@ -66,6 +61,6 @@ In addition to the Xtend and Xtreme template sensors (from DSchouten HA_connecti
 
 I hope I covered all dependencies. Made this repository after everything was running smooth.
 
-#### My dahsboard for reference
+#### My current cards including the Xtore:
 
-<img width="2482" height="1376" alt="Screenshot 2026-03-27 115817" src="https://github.com/user-attachments/assets/07b61b86-9b9c-41f2-82df-9d52e2a83bff" />
+<img width="600" height="1793" alt="Screenshot Xtore-related cards" src="https://github.com/AltaArborH/HA_Xtend_Xtreme_Xtore_schema_card/blob/main/Schema-card_Xtend_Xtreme_Xtore_v0.1.png" />
