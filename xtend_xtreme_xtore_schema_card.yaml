@@ -1,7 +1,7 @@
 type: picture-elements
 image: >-
   data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800
-  900'>
+  960'>
     <defs>
       <style>
         .sub-label {
@@ -14,31 +14,31 @@ image: >-
         <line x1='0' y1='0' x2='0' y2='10' stroke='gray' stroke-width='15' opacity='0.1' />
       </pattern>
     </defs>
-    <rect x='10' y='840' width='780' height='50' fill='url(%23diag)' opacity='1' />
-    <rect x='580' y='15' width='40' height='820' fill='url(%23diag)' opacity='1' />
+    <rect x='10' y='890' width='780' height='50' fill='url(%23diag)' opacity='1' />
+    <rect x='580' y='15' width='40' height='870' fill='url(%23diag)' opacity='1' />
     <rect x='50' y='40' width='200' height='350' rx='20' fill='gray' opacity='0.1'/>
     <rect x='270' y='40' width='200' height='350' rx='20' fill='gray' opacity='0.1'/>
     <rect x='380' y='450' width='40' height='80' rx='20' fill='gray' opacity='0.1'/>
-    <rect x='445' y='530' width='130' height='130' rx='20' fill='gray' opacity='0.1'/>
+    <rect x='445' y='560' width='130' height='130' rx='20' fill='gray' opacity='0.1'/>
     <rect x='630' y='530' width='160' height='270' rx='20' fill='gray' opacity='0.1'/>
-    <rect x='100' y='530' width='200' height='270' rx='20' fill='gray' opacity='0.1'/>
-    <text x='50%' y='873' text-anchor='middle' class='sub-label'>~ Heat distribution system ~</text>
+    <rect x='100' y='530' width='200' height='320' rx='20' fill='gray' opacity='0.1'/>
+    <text x='50%' y='923' text-anchor='middle' class='sub-label'>~ Heat distribution system ~</text>
   </svg>
 elements:
   - type: image
     image: >-
       data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
       800 900'>
-        <path d='M190 390 v85 h190' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M380 505 h-260 v-115' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M155 390 v85 h-91 v65' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M400 390 v60' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M400 530 v310' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M330 840 v-450' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M470 190 h250 v340' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M470 215 h225 v315' fill='none' stroke='gray' stroke-width='3' opacity='0.2' />
-        <path d='M282 530 v-100 h20 v-40' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
-        <path d='M212 530 v-100 h-0 v-40' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M190 360 v75 h190' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M380 475 h-260 v-115' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M155 360 v75 h-91 v110' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M400 360 v60' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M400 500 v360' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M340 860 v-500' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M470 120 h260 v380' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M470 160 h225 v340' fill='none' stroke='gray' stroke-width='3' opacity='0.2' />
+        <path d='M282 500 v-100 h20 v-40' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
+        <path d='M212 500 v-100 h-0 v-40' fill='none' stroke='gray' stroke-width='4' opacity='0.2' />
       </svg>
     style:
       top: 50%
@@ -53,8 +53,8 @@ elements:
           @keyframes flow_dhw {from{stroke-dashoffset:20}to{stroke-dashoffset:0}}
           .dhw { animation: flow_dhw 0.6s linear infinite; }
         </style>
-        <path d='M155 390 v85 h-91 v80' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='dhw' />
-        <path d='M212 530 v-100 h-0 v-40' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='dhw' />
+        <path d='M155 360 v80 h-91 v105' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='dhw' />
+        <path d='M212 499 v-100 h-0 v-40' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='dhw' />
       </svg>
     style:
       top: 50%
@@ -74,8 +74,8 @@ elements:
           @keyframes stroke {from{stroke-dashoffset:0}to{stroke-dashoffset:20}} 
           .f { animation: stroke 1s linear infinite; }
         </style>
-        <path d='M190 390 v85 h190' stroke='%233498db' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
-        <path d='M380 505 h-260 v-115' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' /> 
+        <path d='M190 360 v75 h190' stroke='%233498db' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M380 475 h-260 v-115' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' /> 
       </svg>
     style:
       top: 50%
@@ -93,9 +93,9 @@ elements:
       data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
       800 900'>
         <style>@keyframes stroke {from{stroke-dashoffset:20}to{stroke-dashoffset:0}} .f{animation: stroke 1s linear infinite;}</style>
-        <path d='M400 390 v60' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
-        <path d='M400 530 v310' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
-        <path d='M330 390 v450' stroke='%233498db' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M400 360 v60' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M400 495 v365' stroke='%23FF8C00' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
+        <path d='M339 360 v500' stroke='%233498db' stroke-width='6' fill='none' stroke-dasharray='4,6' class='f' />
       </svg>
     style:
       top: 50%
@@ -118,8 +118,8 @@ elements:
           .fh{animation: heen 1s linear infinite;} 
           .ft{animation: terug 1s linear infinite;}
         </style>
-        <path d='M470 190 h250 v340' stroke='%233498DB' stroke-width='6' fill='none' stroke-dasharray='4,6' class='fh' />
-        <path d='M470 215 h225 v310' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='ft' />
+        <path d='M470 120 h260 v380' stroke='%233498DB' stroke-width='6' fill='none' stroke-dasharray='4,6' class='fh' />
+        <path d='M470 165 h225 v335' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='ft' />
       </svg>
     style:
       top: 50%
@@ -136,10 +136,10 @@ elements:
       data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0
       800 900'>
         <style>
-          @keyframes xtore_cv {from{stroke-dashoffset:20}to{stroke-dashoffset:0}}
+          @keyframes xtore_cv {from{stroke-dashoffset:0}to{stroke-dashoffset:20}}
           .xcv{animation: xtore_cv 1s linear infinite;}
         </style>
-        <path d='M282 530 v-100 h20 v-40' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='xcv' />
+        <path d='M282 500 v-100 h20 v-40' stroke='%23FF8C00' stroke-width='4' fill='none' stroke-dasharray='4,6' class='xcv' />
       </svg>
     style:
       top: 50%
@@ -169,7 +169,7 @@ elements:
   - type: custom:mushroom-title-card
     title: Xtreme
     style:
-      top: 8%
+      top: 7%
       left: 19%
     card_mod:
       style: |
@@ -180,7 +180,7 @@ elements:
   - type: state-label
     entity: sensor.xtreme_tboilersupply
     style:
-      top: 16%
+      top: 14%
       left: 19%
       font-weight: bold
       font-size: 1rem
@@ -193,13 +193,13 @@ elements:
     entity: sensor.xtreme_deltat
     prefix: "ΔT: "
     style:
-      top: 24%
+      top: 21%
       left: 19%
       color: var(--secondary-text-color)
   - type: state-label
     entity: sensor.xtreme_tboilerreturn
     style:
-      top: 32%
+      top: 28%
       left: 19%
       font-weight: bold
       font-size: 1rem
@@ -211,7 +211,7 @@ elements:
   - type: state-icon
     entity: binary_sensor.xtreme_actief_check
     style:
-      top: 39%
+      top: 35%
       left: 19%
     card_mod:
       style: |
@@ -227,8 +227,8 @@ elements:
   - type: custom:mushroom-title-card
     title: Xtore
     style:
-      top: 62%
-      left: 22%
+      top: 57%
+      left: 25%
     card_mod:
       style: |
         ha-card { 
@@ -238,8 +238,8 @@ elements:
   - type: state-label
     entity: sensor.xtend_dhw_actual_temperature_xtore
     style:
-      top: 69%
-      left: 22%
+      top: 64%
+      left: 25%
       font-weight: bold
       font-size: 1rem
     card_mod:
@@ -251,8 +251,8 @@ elements:
     entity: sensor.xtend_dhw_status_xtore
     icon: mdi:water-boiler
     style:
-      top: 69%
-      left: 31%
+      top: 70%
+      left: 25%
     card_mod:
       style: |
         :host {
@@ -280,15 +280,15 @@ elements:
     entity: sensor.xtend_dhw_setpoint_xtore
     prefix: "→ "
     style:
-      top: 76%
-      left: 22%
+      top: 77%
+      left: 25%
       font-size: 0.85rem
       color: var(--secondary-text-color)
   - type: state-label
     entity: sensor.xtend_dhw_availability_xtore
     style:
       top: 83%
-      left: 22%
+      left: 23%
       font-size: 0.85rem
       color: var(--secondary-text-color)
     suffix: ""
@@ -296,7 +296,7 @@ elements:
     entity: sensor.xtend_dhw_tank_volume_xtore
     style:
       top: 83%
-      left: 31%
+      left: 29%
       font-size: 0.75rem
       color: var(--secondary-text-color)
     prefix: "/ "
@@ -304,7 +304,7 @@ elements:
   - type: custom:mushroom-title-card
     title: Xtend
     style:
-      top: 8%
+      top: 7%
       left: 46%
     card_mod:
       style: |
@@ -315,7 +315,7 @@ elements:
   - type: state-label
     entity: sensor.xtend_thpsupply
     style:
-      top: 16%
+      top: 14%
       left: 46%
       font-weight: bold
       font-size: 1rem
@@ -328,13 +328,13 @@ elements:
     entity: sensor.xtend_deltat
     prefix: "ΔT: "
     style:
-      top: 24%
+      top: 21%
       left: 46%
       color: var(--secondary-text-color)
   - type: state-label
     entity: sensor.xtend_thpreturn
     style:
-      top: 32%
+      top: 28%
       left: 46%
       font-weight: bold
       font-size: 1rem
@@ -346,7 +346,7 @@ elements:
   - type: state-icon
     entity: binary_sensor.xtend_actief_check
     style:
-      top: 39%
+      top: 35%
       left: 46%
     card_mod:
       style: |
@@ -408,7 +408,7 @@ elements:
   - type: custom:mushroom-title-card
     title: ODU
     style:
-      top: 62%
+      top: 57%
       left: 89%
     card_mod:
       style: |
@@ -419,7 +419,7 @@ elements:
   - type: state-label
     entity: sensor.xtend_temperaturecondensor_refrigrerant_gas
     style:
-      top: 68%
+      top: 64%
       left: 89%
       font-weight: bold
       font-size: 1rem
@@ -431,7 +431,7 @@ elements:
   - type: state-label
     entity: sensor.xtend_temperaturecondensor_refrigrerant_liquid
     style:
-      top: 74%
+      top: 69%
       left: 89%
       font-weight: bold
       font-size: 1rem
@@ -444,7 +444,7 @@ elements:
     entity: sensor.xtend_fsystem
     icon: mdi:fan
     style:
-      top: 80%
+      top: 75%
       left: 89%
     card_mod:
       style: |
@@ -463,7 +463,7 @@ elements:
   - type: state-label
     entity: sensor.xtend_actualfan1speed
     style:
-      top: 84%
+      top: 80%
       left: 89%
       color: var(--secondary-text-color)
       font-size: 0.8rem
