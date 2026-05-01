@@ -5,7 +5,7 @@ This Fork is based on the [HA_Xtend_Xtreme_schema_card](https://github.com/webpa
 With this card, the information from the Xtore is also added to the schema-card made by [WebPatrick](https://github.com/webpatrick).  
 
 
-<img width="400" alt="schema-card" src="https://github.com/AltaArborH/HA_Xtend_Xtreme_Xtore_schema_card/blob/main/Schema-card_Xtend_Xtreme_Xtore_v0.1.png" />
+<img width="400" alt="schema-card" src="https://github.com/AltaArborH/HA_Xtend_Xtreme_Xtore_schema_card/blob/main/Schema-card_Xtend_Xtreme_Xtore_v0.2.png" />
 
 To retrieve the correct data used in this card, see my other GitHub page [AltaArborH/HA_Xtend-Xtreme-Xtore](https://github.com/AltaArborH/HA_Xtend-Xtreme-Xtore).
 
@@ -60,7 +60,3 @@ In addition to the Xtend and Xtreme template sensors (from DSchouten HA_connecti
 ```
 
 I hope I covered all dependencies. Made this repository after everything was running smooth.
-
-#### My current cards including the Xtore:
-
-<img width="400" alt="Screenshot Xtore-related cards" src="https://github.com/AltaArborH/HA_Xtend_Xtreme_Xtore_schema_card/blob/main/Schema-cards_including_Xtore_v0.1.png" />
