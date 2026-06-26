@@ -256,8 +256,7 @@ elements:
     card_mod:
       style: |
         :host {
-          /* Added legionellearun to the animation check so it pulses then too */
-          animation: {{ 'pulse_xtore 2s ease-in-out infinite' if states('sensor.xtend_dhw_status_xtore') in ['Heating', 'heating', 'legionellearun'] else 'none' }};
+          animation: {{ 'pulse_xtore 2s ease-in-out infinite' if states('sensor.xtend_dhw_status_xtore') in ['Heating', 'heating', 'Heating3','legionellearun'] else 'none' }};
         }
         @keyframes pulse_xtore {
           0%, 100% { transform: translate(-50%, -50%) scale(1); }
@@ -266,7 +265,7 @@ elements:
         state-badge {
           {% set status = states('sensor.xtend_dhw_status_xtore') %}
           
-          {% if status in ['Heating', 'Heating1'] %}
+          {% if status in ['Heating', 'Heating1', 'Heating3'] %}
             color: #FF8C00 !important;
           {% elif status in ['legionellearun', 'LegionellaRun', 'Legionella run'] %}
             color: red !important;
@@ -467,12 +466,12 @@ elements:
       left: 89%
       color: var(--secondary-text-color)
       font-size: 0.8rem
+grid_options:
+  columns: 12
+  rows: 8,5
 card_mod:
   style: |
     ha-card {
       background-color: var(--card-background-color) !important;
       border-radius: 12px;
     }
-grid_options:
-  columns: 12
-  rows: 8,5
